@@ -5,7 +5,7 @@ USE reviews;
 
 CREATE TABLE reviews (
 id INT UNIQUE NOT NULL AUTO_INCREMENT,
-product_id  INT,
+product_id  VARCHAR(144),
 title VARCHAR(144),
 text TEXT ,
 date DATE,
