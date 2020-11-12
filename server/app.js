@@ -33,7 +33,7 @@ app.get('/api/reviews', (req, res) => {
     } else {
       res.statusCode = 200;
       res.json(data);
-      console.log("gotem");
+      console.log("got reviews");
 
     }
   })
