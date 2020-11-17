@@ -1,0 +1,12 @@
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+	font-size: 1.375rem;
+	line-height: 1.3334;
+	letter-spacing: -.53px;
+	font-weight: Bold 700;
+  margin-bottom: 1.5rem;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+}

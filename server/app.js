@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
-//app.use(express.static(path.join(__dirname,'../client/dist')));
+app.use(express.static(path.join(__dirname,'../client/dist')));
 
 var connection = mysql.createConnection({
   host: 'localhost',
