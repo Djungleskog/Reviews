@@ -1,22 +1,10 @@
-const app = require('../server/app.js').app;
-const request = require('supertest');
+const app = require('../server/app.js');
+const supertest = require('supertest');
+const request = supertest(app);
 
-describe('Testing API from server', () => {
-  test('Send get request of reviews', function(done) {
-    request(app)
-      .get('/api-reviews')
-      .query({"product_id":"a8dcf1ef-b586-4a6b-8014-d14859fa466a"})
-      .set('Accept','application/json')
-      .expect(200)
-      .expect(function(res) {
+it('Should get the all products', async (done) => {
+  const res = await request.get('/api/reviews');
+  expect(res.body.length).toEqual(100);
+  done();
+});
 
-        expect(JSON.parse(res.author)).toEqual('Kenny Becker')
-      })
-      .end(function(err,res) {
-        if (err) {return done(err);}
-        done();
-      })
-    }
-
-    );
-})

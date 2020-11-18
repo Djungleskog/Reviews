@@ -39,6 +39,8 @@ app.get('/api/reviews', (req, res) => {
   })
 });
 
-app.listen(port, function() {
+var server = app.listen(port, function() {
   console.log(`listening on port ${port}`);
 });
+
+module.exports = server;
