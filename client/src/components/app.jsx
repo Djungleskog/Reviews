@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       reviewsArray: [],
-      drawerOpen: false
+      slideOpen: false
     }
     this.getReviews = this.getReviews.bind(this);
     this.SliderClick = this.SliderClick.bind(this);
@@ -21,19 +21,18 @@ class App extends React.Component {
 
   SliderClick() {
     this.setState({
-      drawerOpen: !this.state.drawerOpen
+      slideOpen: !this.state.slideOpen
     })
   }
 
   BackSliderClick() {
     this.setState({
-      drawerOpen: false
+      slideOpen: false
     })
   }
   getReviews(){
     axios.get('/api/reviews')
     .then(res => {
-      console.log('Reviews: ',res.data);
       this.setState({
         reviewsArray: res.data
       });
@@ -47,13 +46,13 @@ class App extends React.Component {
 
   render(){
     let backdrop;
-    if(this.state.drawerOpen){
+    if(this.state.slideOpen){
       backdrop = <BackSlider close={this.BackSliderClick}/>;
      }
 
     return(
       <div>
-        <Slider reviews={this.state.reviewsArray} show={this.state.drawerOpen}/>
+        <Slider reviews={this.state.reviewsArray} show={this.state.slideOpen}/>
         { backdrop }
         <SliderButton toggle={this.SliderClick}/>
       </div>
