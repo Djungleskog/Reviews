@@ -16,6 +16,7 @@
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "axios": "^0.21.0",
+    "css-loader": "^5.0.1",
     "express": "^4.17.1",
     "faker": "^5.1.0",
     "mysql": "^2.18.1",
@@ -25,7 +26,8 @@
     "react-native-customer-review-bars": "^1.0.7",
     "react-star-rating-component": "^1.4.1",
     "react-star-ratings": "^2.3.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "style-loader": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
