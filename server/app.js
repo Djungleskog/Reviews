@@ -3,7 +3,7 @@ const path = require('path');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3001;
+const port = 3004;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'../client/dist')));
