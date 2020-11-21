@@ -1,3 +1,5 @@
 ##KeyFiles
 *.pem
 /node_modules/
+.DS_Store
+client/dist/bundle.js
