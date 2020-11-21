@@ -4,7 +4,7 @@ import ReviewList from './ReviewList.jsx';
 import Slider from './Slider.jsx';
 import SliderButton from './SliderButton.jsx';
 import BackSlider from './BackSlider.jsx';
-import '/Users/john/Desktop/Hack/Reviews/client/styles.css'
+import '../../styles.css'
 
 
 class App extends React.Component {
