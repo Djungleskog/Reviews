@@ -32,7 +32,7 @@ class App extends React.Component {
     })
   }
   getReviews(){
-    axios.get('/api/reviews')
+    axios.get('/api/reviews_toggle/reviews')
     .then(res => {
       this.setState({
         reviewsArray: res.data

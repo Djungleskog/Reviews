@@ -24,7 +24,7 @@ connection.connect((err) => {
   }
 });
 
-app.get('/api/reviews', (req, res) => {
+app.get('/api/reviews_toggle/reviews', (req, res) => {
   console.log('in GET')
   var queryString = 'SELECT * FROM reviews';
   connection.query(queryString, (err,data) => {
