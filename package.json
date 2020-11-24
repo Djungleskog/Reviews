@@ -27,7 +27,8 @@
     "react-star-rating-component": "^1.4.1",
     "react-star-ratings": "^2.3.0",
     "request": "^2.88.2",
-    "style-loader": "^2.0.0"
+    "style-loader": "^2.0.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
