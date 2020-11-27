@@ -53,14 +53,20 @@ html {
 }
 
 .btn {
-  background-color: white; /* Green */
-  border: none;
-  padding: 0px 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
+  display: flex;
+  background: none;
+  overflow: hidden;
+  border: 0;
   cursor: pointer;
+  flex-direction: row;
+  padding: 1.25rem 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.625rem;
+  color: #484848;
+  text-decoration: none;
+  font-size: .75rem;
   outline:none;
 
 }
