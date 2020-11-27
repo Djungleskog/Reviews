@@ -44,70 +44,70 @@ const ReviewRecommend = styled.div`
 
 
 const ReviewOverall = styled.div`
-font-size: 2.25rem;
-line-height: 1.33333;
-letter-spacing: -.04rem;
-font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.33333;
+  letter-spacing: -.04rem;
+  font-weight: bold;
 `;
 const StarsOverall = styled.div`
-display: flex;
-align-items: center;
-line-height: normal;
-font-size: .75rem;
-color: #484848;
-position: relative;
-box-sizing: inherit;
-outline: none;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  font-size: .75rem;
+  color: #484848;
+  position: relative;
+  box-sizing: inherit;
+  outline: none;
 `;
 const AverageTextOverall = styled.div`
-font-size: .875rem;
-font-weight: 700;
-margin-bottom: 1.875rem;
+  font-size: .875rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
 `;
 const ScoreStars = styled.div`
-margin: 0;
-padding: 0;
-margin-bottom: 2.5rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2.5rem;
 `;
 
 const RatingStarDiv = styled.div`
-width: 100%;
-padding: 0 1.25rem;
+  width: 100%;
+  padding: 0 1.25rem;
 `;
 const RatingStars = styled.div`
-white-space: nowrap;
-line-height: .83333;
+  white-space: nowrap;
+  line-height: .83333;
 `;
 const LeftText = styled.div`
-min-width: 57%;
-text-align: left;
+  min-width: 57%;
+  text-align: left;
 `;
 const RightStarText = styled.div`
-text-align: center;
-left: 10px;
+  text-align: center;
+  left: 10px;
 `;
 const RightText = styled.div`
-text-align: right;
+  text-align: right;
 `;
 const ReviewItemDiv = styled.div`
-display: flex;
-align-items: center;
-padding-bottom: .625rem;
-text-align: left;
+  display: flex;
+  align-items: center;
+  padding-bottom: .625rem;
+  text-align: left;
 `;
 const DivContain = styled.div`
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 `;
 const ReviewBarsDiv = styled.div`
-display: flex;
-align-items: center;
-padding-bottom: .625rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: .625rem;
 `;
 const RatingBarDiv = styled.div`
-width: 100%;
-padding: 0 1rem;
-text-align: left;
+  width: 100%;
+  padding: 0 1rem;
+  text-align: left;
 `;
 const ReviewItem = (props) => (
 
