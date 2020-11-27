@@ -3,7 +3,7 @@ const path = require('path');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
+const port = 3004;
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,'../client/dist')));
@@ -24,7 +24,7 @@ connection.connect((err) => {
   }
 });
 
-app.get('/api/reviews', (req, res) => {
+app.get('/api/reviews_toggle/reviews', (req, res) => {
   console.log('in GET')
   var queryString = 'SELECT * FROM reviews';
   connection.query(queryString, (err,data) => {

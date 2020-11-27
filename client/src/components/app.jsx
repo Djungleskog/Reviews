@@ -4,6 +4,7 @@ import ReviewList from './ReviewList.jsx';
 import Slider from './Slider.jsx';
 import SliderButton from './SliderButton.jsx';
 import BackSlider from './BackSlider.jsx';
+import '../../styles.css'
 
 
 class App extends React.Component {
@@ -31,7 +32,7 @@ class App extends React.Component {
     })
   }
   getReviews(){
-    axios.get('/api/reviews')
+    axios.get('/api/reviews_toggle/reviews')
     .then(res => {
       this.setState({
         reviewsArray: res.data

@@ -1,0 +1,83 @@
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+	font-size: 1.375rem;
+	line-height: 1.3334;
+	letter-spacing: -.53px;
+	font-weight: Bold 700;
+  margin-bottom: 1.5rem;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  color: #484848;
+  min-height: 100%;
+  margin: 0;
+  font-size: .875rem;
+  line-height: 1.71429;
+}
+
+html {
+  height: 100%
+}
+
+.side-drawer {
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 27.25rem;
+  z-index: 200;
+  box-shadow: 1px 0px 3px rgba(0,0,0,0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  opacity: 0.5;
+  z-index: 100;
+  top: 0;
+  right: 0;
+}
+
+.btn {
+  display: flex;
+  background: none;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  flex-direction: row;
+  padding: 1.25rem 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.625rem;
+  color: #484848;
+  text-decoration: none;
+  font-size: .75rem;
+  outline:none;
+
+}
+.btn:hover{
+  text-decoration:underline;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
