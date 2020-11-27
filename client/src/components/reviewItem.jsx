@@ -25,7 +25,7 @@ const ReviewDate = styled.div`
   font-size: .75rem;
 `;
 const ReviewHeadStars = styled.div`
-  argin: 0;
+  margin: 0;
   padding: 0;
 `;
 const ReviewTitle = styled.div`
