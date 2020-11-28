@@ -12,6 +12,10 @@ body{
 html {
   height: 100%
 }
+h1{
+  font-size: 1.375rem;
+  line-height: 1.45455;
+}
 
 .side-drawer {
   height: 100%;
@@ -27,10 +31,14 @@ html {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  padding: 1.875rem 1.875rem 3.125rem;
+
 }
 
 .side-drawer.open {
   transform: translateX(0);
+  padding: 1.875rem 1.875rem 3.125rem;
+
 }
 
 .backdrop {
@@ -66,3 +74,109 @@ html {
   text-decoration:underline;
 }
 
+.ReviewOverall {
+font-size: 2.25rem;
+line-height: 1.33333;
+letter-spacing: -.04rem;
+font-weight: bold;
+font-family: 'Noto Sans', sans-serif;
+}
+.StarsOverall {
+display: flex;
+align-items: center;
+line-height: normal;
+font-size: .75rem;
+color: #484848;
+position: relative;
+box-sizing: inherit;
+outline: none;
+}
+.AverageTextOverall {
+font-size: .875rem;
+font-weight: 700;
+margin-bottom: 1.875rem;
+}
+.ScoreStars {
+margin: 0;
+padding: 0;
+margin-bottom: 2.5rem;
+}
+
+.RatingStarDiv {
+width: 100%;
+padding: 0 1.25rem;
+}
+.RatingStars {
+white-space: nowrap;
+line-height: .83333;
+}
+.LeftText {
+min-width: 57%;
+text-align: left;
+}
+.RightStarText {
+text-align: center;
+left: 10px;
+}
+.RightText {
+text-align: right;
+}
+.ReviewItemDiv {
+display: flex;
+align-items: center;
+padding-bottom: .625rem;
+text-align: left;
+}
+.DivContain {
+margin: 0;
+padding: 0;
+}
+.ReviewBarsDiv {
+display: flex;
+align-items: center;
+padding-bottom: .625rem;
+}
+.RatingBarDiv {
+width: 100%;
+padding: 0 1rem;
+text-align: left;
+}
+
+.OverallDiv {
+  min-width: 37.5em;
+  padding: 0 1.875rem;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.ReviewButtonDiv {
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  background: none;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  flex-direction: row;
+  padding: 1.25rem 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.625rem;
+  text-decoration: none;
+  border-bottom: 1px solid #dfdfdf;
+}
+.ReviewTextDiv {
+  text-align: left;
+  flex-grow: 1;
+}
+.ReviewText {
+  color: #111;
+  font-size: .875rem;
+  line-height: 1.57143;
+  font-weight: 700;
+  display: block;
+  width: auto;
+}
