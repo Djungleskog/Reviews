@@ -14,6 +14,8 @@ const ReviewContain = styled.div`
   border-top: 1px solid #dfdfdf;
   padding-top: 1.875rem;
   margin-bottom: 1.875rem;
+  font-family: 'Noto Sans', sans-serif;
+
 `;
 const ReviewHead = styled.div`
   align-items: center;

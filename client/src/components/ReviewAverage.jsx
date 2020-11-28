@@ -71,6 +71,7 @@ class ReviewAverage extends React.Component {
       line-height: 1.33333;
       letter-spacing: -.04rem;
       font-weight: bold;
+      font-family: 'Noto Sans', sans-serif;
     `;
     const StarsOverall = styled.div`
       display: flex;
