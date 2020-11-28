@@ -8,9 +8,9 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/app.js",
+    "start": "node server/app.js",
     "seed": "node server/seeder.js",
-    "build": "webpack -w",
+    "build": "webpack",
     "test": "jest"
   },
   "dependencies": {
