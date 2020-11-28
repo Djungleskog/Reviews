@@ -67,64 +67,64 @@ class ReviewAverage extends React.Component {
 
 
     return(
-      <div classname='DivContain'>
-        <div classname='ScoreStars'>
-          <div classname='ReviewOverall'> <p>{this.getOverall(reviews)}</p></div>
-          <div classname='StarsOverall'> <p> <ReviewStars value={this.getOverall(reviews)}/> ({reviews.length})</p></div>
+      <div className='DivContain'>
+        <div className='ScoreStars'>
+          <div className='ReviewOverall'> {this.getOverall(reviews)}</div>
+          <div className='StarsOverall'> <ReviewStars value={this.getOverall(reviews)}/> ({reviews.length})</div>
         </div>
-        <div classname='AverageTextOverall' > Average customer ratings</div>
+        <div className='AverageTextOverall' > Average customer ratings</div>
 
-        <div classname='ReviewItemDiv'>
-          <div classname='LeftText'>Overall</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getOverall(reviews)}/></div>
+        <div className='ReviewItemDiv'>
+          <div className='LeftText'>Overall</div>
+          <div className='RatingStarDiv'>
+            <div className='RatingStars'><ReviewStars value={this.getOverall(reviews)}/></div>
           </div>
-          <div classname='RightStarText'>{this.getOverall(reviews)}</div>
-        </div>
-
-
-        <div classname='RevireBarsDiv'>
-          <div classname='LeftText'>Ease of assembly/installation</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getAssembly(reviews)}/></div>
-          </div>
-          <div classname='RightStarText'>{this.getAssembly(reviews)}</div>
+          <div className='RightStarText'>{this.getOverall(reviews)}</div>
         </div>
 
 
-        <div classname='RevireBarsDiv'>
-          <div classname='LeftText'>Value for money</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getValue(reviews)}/></div>
+        <div className='ReviewBarsDiv'>
+          <div className='LeftText'>Ease of assembly/installation</div>
+          <div className='RatingBarDiv'>
+            <ReviewBar completed={this.getAssembly(reviews)}/>
           </div>
-          <div classname='RightStarText'>{this.getValue(reviews)}</div>
+          <div className='RightStarText'>{this.getAssembly(reviews)}</div>
+        </div>
+
+
+        <div className='ReviewBarsDiv'>
+          <div className='LeftText'>Value for money</div>
+          <div className='RatingBarDiv'>
+            <ReviewBar completed={this.getValue(reviews)}/>
+          </div>
+          <div className='RightStarText'>{this.getValue(reviews)}</div>
         </div>
 
 
 
-        <div classname='RevireBarsDiv'>
-          <div classname='LeftText'>Product quality</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getQuality(reviews)}/></div>
+        <div className='ReviewBarsDiv'>
+          <div className='LeftText'>Product quality</div>
+          <div className='RatingBarDiv'>
+            <ReviewBar completed={this.getQuality(reviews)}/>
           </div>
-          <div classname='RightStarText'>{this.getQuality(reviews)}</div>
+          <div className='RightStarText'>{this.getQuality(reviews)}</div>
         </div>
 
 
-        <div classname='RevireBarsDiv'>
-          <div classname='LeftText'>Appearance</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getAppearance(reviews)}/></div>
+        <div className='ReviewBarsDiv'>
+          <div className='LeftText'>Appearance</div>
+          <div className='RatingBarDiv'>
+            <ReviewBar completed={this.getAppearance(reviews)}/>
           </div>
-          <div classname='RightStarText'>{this.getAppearance(reviews)}</div>
+          <div className='RightStarText'>{this.getAppearance(reviews)}</div>
         </div>
 
-        <div classname='RevireBarsDiv'>
-          <div classname='LeftText'>Works as expected</div>
-          <div classname='RatingStarDiv'>
-            <div classname='RatingStars'><ReviewStars value={this.getExpected(reviews)}/></div>
+        <div className='ReviewBarsDiv'>
+          <div className='LeftText'>Works as expected</div>
+          <div className='RatingBarDiv'>
+            <ReviewBar completed={this.getExpected(reviews)}/>
           </div>
-          <div classname='RightStarText'>{this.getExpected(reviews)}</div>
+          <div className='RightStarText'>{this.getExpected(reviews)}</div>
         </div>
 
     </div>

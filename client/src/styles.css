@@ -105,6 +105,8 @@ margin-bottom: 2.5rem;
 .RatingStarDiv {
 width: 100%;
 padding: 0 1.25rem;
+padding-right: 78px;
+
 }
 .RatingStars {
 white-space: nowrap;
@@ -115,20 +117,16 @@ min-width: 57%;
 text-align: left;
 }
 .RightStarText {
-text-align: center;
-left: 10px;
+text-align: right;
+right: 10px;
 }
 .RightText {
 text-align: right;
 }
-.ReviewItemDiv {
-display: flex;
-align-items: center;
-padding-bottom: .625rem;
-text-align: left;
-}
+
 .DivContain {
 margin: 0;
+margin-bottom: 1.875rem;
 padding: 0;
 }
 .ReviewBarsDiv {
@@ -180,3 +178,90 @@ text-align: left;
   display: block;
   width: auto;
 }
+
+.ReviewContain {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+.ReviewHead {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.875rem;}
+.ReviewDate {
+  text-align: left;
+  font-size: .75rem;
+}
+.ReviewHeadStars {
+  margin: 0;
+  padding: 0;
+}
+.ReviewTitle {
+  font-weight: 700;
+  padding-bottom: .625rem;
+  text-align: left;
+}
+.ReviewDescrip {
+  margin-bottom: 1.875rem;
+}
+.ReviewRecommend {
+  display: flex;
+  padding-bottom: 1.875rem;
+  font-size: .75rem;
+}
+
+
+.ReviewOverall {
+  font-size: 2.25rem;
+  line-height: 1.33333;
+  letter-spacing: -.04rem;
+  font-weight: bold;
+}
+.StarsOverall {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  font-size: .75rem;
+  color: #484848;
+  position: relative;
+  box-sizing: inherit;
+  outline: none;
+}
+.AverageTextOverall {
+  font-size: .875rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+.ScoreStars {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2.5rem;
+}
+
+
+.RatingStars {
+  white-space: nowrap;
+  line-height: .83333;
+}
+.LeftText {
+  min-width: 57%;
+  text-align: left;
+}
+.RightStarText {
+  text-align: center;
+  left: 10px;
+}
+.RightText {
+  text-align: right;
+}
+.ReviewItemDiv {
+  display: flex;
+  align-items: center;
+  padding-bottom: .625rem;
+  text-align: left;
+}
+
+

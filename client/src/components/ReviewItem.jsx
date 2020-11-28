@@ -9,11 +9,12 @@ var showRecommend = (recommend) => {
     return '☓ No, I don\'t recommend this product';
   }
 }
+
 const ReviewItem = (props) => (
 
     <div className="ReviewContain">
       <div className="ReviewHead">
-        <div className="ReviewHeadStars"> <ReviewStars value={props.review.overall_rating}/></ReviewStars>
+        <div className="ReviewHeadStars"> <ReviewStars value={props.review.overall_rating}/></div>
         <div className="ReviewDate">{props.review.author}-{props.review.date.slice(0,10)}</div>
       </div>
 
