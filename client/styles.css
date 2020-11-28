@@ -1,4 +1,4 @@
-h1 {
+.headone {
   font-family: 'Noto Sans', sans-serif;
 	font-size: 1.375rem;
 	line-height: 1.3334;
@@ -74,10 +74,3 @@ html {
   text-decoration:underline;
 }
 
-p {
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}

@@ -27,7 +27,6 @@ class Slider extends React.Component {
           </ModalContainer>
       )
     }
-
 }
 
 export default Slider;
